@@ -52,7 +52,7 @@
       </div>
 
       <div class="big-card">
-        <!--
+        
         <div class="card">
           <div class="title">
             Adding Note for Cardiovascular Disease
@@ -61,9 +61,9 @@
           <button class="annotation-button" id="add">Add</button></span>
           <div class="annotations">
           Latest Annotation
-          <li id="note">No annotations</li>
+          <li id="note"></li>
           </div>
-        </div> -->
+        </div> 
 
         <div class="card">
           <div class="title">
@@ -74,16 +74,19 @@
       </div>
 
 
-      <div class="big-card">
+      <div class="small-card">
         <div class="card">
           <div class="title">
             Generate Risk Score
           </div>
-        <span>
-          <button class="risk-button" id="calculate">Calculate</button></span>
-          <div class="riskResult">
-          Risk Probability for Cardiovascular disease
-          <li id="risk"> </li>
+          <div>
+            <button class="button" id="calculate" onclick="getRiskScore()">
+              Caculate Risk
+            </button>
+          </div>
+          <div class="annotations">
+            Potential Risk Probability
+            <li id="risk"> </li>
           </div>
         </div>
       </div>
